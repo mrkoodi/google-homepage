@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background: white;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* Navigation Top right */
+
+#nav ul {
+margin-left: 71.5%;
+}
+
+#nav li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+#nav li a:hover {
+  color: rgba(0,0,0,0.6);
+  text-decoration: underline;
+}
+
+
+
+.signin {
+  width: 70px;
+  height: 30px;
+  color:white;
+  font-weight: bold;
+  background: rgb(49, 116, 241);
+  border: none;
+  border-radius: 1.5px;
+  text-align: center;
+  margin-right: 50px;
+
+}
+
+#signin {
+    float: right;
+    margin-top: -40px;
+}
+
+.signin:hover {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+/* Boxes */
+
+#squares, #squares .box1, #squares .box2, #squares .box3, #squares .box4, #squares .box5, #squares .box6, #squares .box7, #squares .box8 {
+  background: rgba(0,0,0,0.4);
+  width: 4px;
+  height: 4px;
+}
+
+#squares .box1,#squares .box3, #squares .box4, #squares .box5, #squares .box7, #squares .box8  {
+  margin-left: 6px;
+  
+}
+
+#squares .box2, #squares .box6 {
+  margin-top:2px;
+}
+
+
+#squares  {
+  margin-right: 12.5%;
+  float: right;
+  margin-top: -34px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Google Body */
+
+#googlebody {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 100px;
+}
+
+/* _______________________________________________________________ */
+
+.img img {
+  width: 350px;
+  height: 140px;
+  margin-left: 30%;
+  margin-top: -50px;
+}
+
+.img {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+
+}
+
+/* _______________________________________________________________ */
+
+#googlebody input[type="text"] {
+  width: 55%;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  padding: 15px;
+  border: 1px solid lightgray;
+  margin-left: 22%;
+  margin-bottom: 20px;
+}
+
+#googlebody input[type="text"]:hover {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+#googlebody input[type="text"]:focus {
+    outline-style: none;
+    border-color: none;
+}
+
+
+/* Recorder */
+
+.mic {
+  float: right;
+  position: absolute;
+  right: 25.7%;
+  margin-top: 9px;
+
+}
+
+.mic .mic1 {
+  background: #3174f1;
+  width: 7px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.mic .mic2 {
+  width: 15px;
+  height: 3px;
+  margin-top: 10px;
+  background: #e63125;
+  border-radius: 0px 0px 80px 80px;
+  margin-left: -4px;
+  margin-top: 2px;
+}
+
+.mic .mic3 {
+  width: 3px;
+  height: 6px;
+  margin-top: 2px;
+  background: #3174f1;
+  margin-left: 2px;
+}
+
+
+/* Mic tootltip */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%
+  margin-left:-60px;
+  opacity: 0pc;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+/* _______________________________________________________________ */
+
+/* Buttton1 and Button2 */
+
+  #buttons {
+    width: 100%;
+    margin-left: 35%;
+    float: left;
+  }
+
+ .button1, .button2 {
+    width: 140px;
+    height:35px;
+    padding: 10px;
+    background: rgba(0,0,0,0.1/1);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 1px;
+    opacity: 0.5;
+    margin-top: -17px;
+    margin-bottom: -50px;
+  }
+
+  #googlebody .button1:active, #googlebody .button2:active {
+    outline: none;
+    border: none;
+  }
+
+  #googlebody .button1:hover, #googlebody .button2:hover {
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.0);
+    opacity: 0.7;
+
+  }
+
+  /* _______________________________________________________________ */
+
+
+  /* footer and Info */
+
+  #info {
+    border-top: 0.2px solid rgba(0,0,0,0.2);
+    width: 100%;
+    margin-top: -40px;
+    background: rgba(0,0,0,0.1);
+
+  }
+
+  #p {
+    border-bottom: 0.2px solid rgba(0,0,0,0.2);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+  #p p {
+    color: rgba(0,0,0,0.6); 
+    margin: 0px;
+    padding: 5px 0px 10px 20px;
+  }
+
+
+  #info footer {
+     padding: 10px;
+     padding-top: 18.8px;
+  }
+
+  footer ul {
+    margin-right: 10px;
+    padding-bottom: 5px;
+
+  }
+  footer li {
+    list-style-type: none;
+    display: inline;
+    margin-left: -17px;
+  }
+
+  footer li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    margin-right: 35px;
+  }
+
+  footer li a:hover {
+    text-decoration: underline;
+    color: rgba(0,0,0,0.6);
+  }
+
+  footer #ul {
+    float: right;
+    margin-top: -55px;
+  }
+
+  footer #ul li {
+    margin-left: 2px;
+
+  }
+
+
+@media only screen and  (max-width: 768px) {
+
+  body {
+    float: none;
+    width: 100%;
+    overflow: visible;
+     overflow-x: hidden;
+  }
+
+
+
+  #nav ul {
+    display: inline;
+    margin-left: -40px;
+
+  }
+
+  #signin {
+
+    margin-top: 2px;
+  }
+
+  #squares {
+      margin-left: 0%;
+      margin-top: 10px;
+  }
+
+  .img img {
+  width: 250px;
+  height: 100px;
+  margin-left: 17.5%;
+  margin-top: -50px;
+}
+
+
+#buttons {
+    margin-left: 35%;
+    width: 100%;
+  }
+
+.button1, .button2 {
+    width: 140px;
+    height:35px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .button2 { 
+    margin-top: -10px;
+
+   }
+
+
+   #info {
+    margin-top: -10px;
+   }
+
+   footer #ul  {
+    float:none;
+    width: 100%;
+    margin:auto;
+    margin-left: -20px;
+    padding-bottom: -8px;
+    word-wrap: break-word;
+
+  }
+
+
+}
+
+
+
+@media only screen and  (max-width: 450px) {
+
+  .img img {
+  width: 250px;
+  height: 100px;
+  margin-left: -85%;
+  margin-top: -50px;
+}
+
+
+#buttons {
+    margin-left: 12%;
+    width: 100%;
+  }
+
+.button1, .button2 {
+    width: 140px;
+    height:35px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+
+
+}
+
+
+@media only screen and  (max-width: 350px) {
+
+  .img img {
+  width: 250px;
+  height: 100px;
+  margin-left: -450%;
+  margin-top: -50px;
+}
+
+
+#buttons {
+    margin-left: -17%;
+    width: 100%;
+  }
+
+.button1, .button2 {
+    width: 140px;
+    height:35px;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
