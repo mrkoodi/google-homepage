@@ -13,14 +13,28 @@ body {
 
 /* Navigation Top right */
 
+#nav {
+  width: 100%;
+  padding: 15px  0px 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+
+#nav .ul {
+  margin-right: 15px;
+}
+
 #nav ul {
-margin-left: 71.5%;
+  height: 100%;
+  margin: 0px;
+  padding: 2px 0px 2px 0px;
 }
 
 #nav li {
   display: inline;
   list-style-type: none;
-  margin-left: 20px;
+  padding-right: 5px;
 }
 
 #nav li a {
@@ -36,7 +50,7 @@ margin-left: 71.5%;
 
 
 .signin {
-  width: 70px;
+  width: 55px;
   height: 30px;
   color:white;
   font-weight: bold;
@@ -44,13 +58,12 @@ margin-left: 71.5%;
   border: none;
   border-radius: 1.5px;
   text-align: center;
-  margin-right: 50px;
+  margin-right: 27px;
 
 }
 
 #signin {
-    float: right;
-    margin-top: -40px;
+
 }
 
 .signin:hover {
@@ -59,116 +72,64 @@ margin-left: 71.5%;
 
 
 
-
-
 /* Boxes */
 
-#squares, #squares .box1, #squares .box2, #squares .box3, #squares .box4, #squares .box5, #squares .box6, #squares .box7, #squares .box8 {
+#sefx {
+  width: 17px;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.squares,  .box1,  .box2,  .box3,  .box4,  .box5,  .box6,  .box7,  .box8 {
   background: rgba(0,0,0,0.4);
   width: 4px;
   height: 4px;
 }
 
-#squares .box1,#squares .box3, #squares .box4, #squares .box5, #squares .box7, #squares .box8  {
+ .box1, .box3,  .box4,  .box5,  .box7,  .box8  {
   margin-left: 6px;
-  
+
 }
 
-#squares .box2, #squares .box6 {
+ .box2,  .box6 {
   margin-top:2px;
 }
-
-
-#squares  {
-  margin-right: 12.5%;
-  float: right;
-  margin-top: -34px;
-  cursor: pointer;
-}
-
-
-
 
 
 /* Google Body */
 
 #googlebody {
-  width: 100%;
-  margin: auto;
-  margin-top: 50px;
-  padding: 100px;
+  width: 45%;
+  margin: 20px auto;
+  display: block;
 }
+
 
 /* _______________________________________________________________ */
-
-.img img {
-  width: 350px;
-  height: 140px;
-  margin-left: 30%;
-  margin-top: -50px;
-}
 
 .img {
-  width: 100%;
+  width: 550px;
+  height:  220px;
   margin: auto;
-  padding: 40px;
-
+  background: pink;
+  padding: 0px;
+  border: 0px;
+  background: url("../Img/google_logo.png") no-repeat;
+  background-size: cover;
 }
 
 /* _______________________________________________________________ */
 
-#googlebody input[type="text"] {
-  width: 55%;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  padding: 15px;
-  border: 1px solid lightgray;
-  margin-left: 22%;
-  margin-bottom: 20px;
+input[type="text"] {
+  width: 487px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
 
-#googlebody input[type="text"]:hover {
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-}
-
-#googlebody input[type="text"]:focus {
-    outline-style: none;
-    border-color: none;
-}
-
-
-/* Recorder */
-
-.mic {
-  float: right;
-  position: absolute;
-  right: 25.7%;
-  margin-top: 9px;
-
-}
-
-.mic .mic1 {
-  background: #3174f1;
-  width: 7px;
-  height: 10px;
-  border-radius: 5px;
-}
-
-.mic .mic2 {
-  width: 15px;
-  height: 3px;
-  margin-top: 10px;
-  background: #e63125;
-  border-radius: 0px 0px 80px 80px;
-  margin-left: -4px;
-  margin-top: 2px;
-}
-
-.mic .mic3 {
-  width: 3px;
-  height: 6px;
-  margin-top: 2px;
-  background: #3174f1;
-  margin-left: 2px;
+form {
+  background: yellow;
 }
 
 
@@ -220,86 +181,240 @@ margin-left: 71.5%;
 /* Buttton1 and Button2 */
 
   #buttons {
-    width: 100%;
-    margin-left: 35%;
-    float: left;
+    width: 33%;
+    margin: 45px auto;
+    display: flex;
+    justify-content: space-between;
+    background: forestgreen;
+
   }
 
- .button1, .button2 {
-    width: 140px;
+ .button1, .button2, #dbtn .dbtn1, #dbtn .dbtn2 {
+    width: 135px;
     height:35px;
-    padding: 10px;
-    background: rgba(0,0,0,0.1/1);
+    background: rgba(0,0,0,0.04);
     border: none;
     outline: none;
-    font-weight: bold;
-    border-radius: 1px;
-    opacity: 0.5;
+    font-size: 14px;
+    border-radius: 5px;
     margin-top: -17px;
     margin-bottom: -50px;
+    color: #5F6368;
+    cursor: pointer;
   }
 
-  #googlebody .button1:active, #googlebody .button2:active {
+  .button2 {
+    width: 145px;
+  }
+
+
+  #googlebody .button1:focus, #googlebody .button2:focus {
     outline: none;
-    border: none;
+    border: 1px solid blue;
   }
 
   #googlebody .button1:hover, #googlebody .button2:hover {
     box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.0);
-    opacity: 0.7;
-
+    color: #222;
+    border: 1px solid #c6c6c6;
   }
+
+  #googlebody .search {
+    width: 582px;
+    height: 46px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    border: 1px solid #dfe1e5
+  }
+
+  #googlebody .search:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+  }
+
+  #googlebody .search .sicon {
+    width: 30px;
+    height: 30px;
+    margin: 8px 0px 0px 0px;
+  }
+
+  #googlebody .search .spicon {
+    width: 25px;
+    height: 30px;
+    margin: 8px 9px 0px 0px;
+    transform: scale(0.9);
+  }
+
+#googlebody a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  color: indigo;
+}
+
+#googlebody a:hover {
+  text-decoration: underline;
+}
+
+#googlebody .goffer, #googlebody ul {
+  width: 75%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#googlebody .goffer {
+  display: block;
+  margin-top: 30px;
+}
+
+#googlebody ul {
+  width: 50%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+}
+
+
+/* Drop Down */
+
+#dropdown {
+    width: 582px;
+    height: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    padding: 0px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    display: none;
+  }
+
+#dropdown .clock {
+    width: 15px;
+    height: 15px;
+    background: url("../Img/clock.png");
+    background-size: contain;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+  #dropdown ul  {
+    list-style-type: disc;
+    width: 582px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #dropdown ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 20px 5px 15px;
+    cursor: auto;
+    font-size: 17px;
+  }
+
+#dropdown ul li span {
+  width: 85%;
+  color: indigo;
+  text-align: left;
+}
+
+  #dropdown ul li:hover {
+    background: #eee;
+  }
+
+  #dropdown ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+  }
+
+  #dropdown ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  #dbtn {
+    width: 48.5%;
+    background-color: yellow;
+    margin: 12em auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  /* ghost styles/ ghostcss
+
+
+  #googlebody ul {
+    list-style-type: none;
+  }
+
+  #googlebody .search:focus {
+      outline-style: none;
+      border-color: none;
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  }*/
+
+
+
+
 
   /* _______________________________________________________________ */
 
 
   /* footer and Info */
 
-  #info {
+  footer {
     border-top: 0.2px solid rgba(0,0,0,0.2);
     width: 100%;
-    margin-top: -40px;
-    background: rgba(0,0,0,0.1);
-
+    position: fixed;
+    bottom: 0px;
+    background: #f2f2f2;
   }
 
   #p {
     border-bottom: 0.2px solid rgba(0,0,0,0.2);
     width: 100%;
     margin: 0px;
+    padding: 10px 0px 10px 40px;
+    color: rgba(0,0,0,0.6);
+  }
+
+  footer .options {
+    height: 23px;
+    border-top: 0.4px solid rgba(0,0,0,0.15);
+    margin: 0px;
     padding: 0px;
   }
 
-
-  #p p {
-    color: rgba(0,0,0,0.6); 
-    margin: 0px;
-    padding: 5px 0px 10px 20px;
-  }
-
-
-  #info footer {
-     padding: 10px;
-     padding-top: 18.8px;
-  }
-
   footer ul {
-    margin-right: 10px;
-    padding-bottom: 5px;
-
+    height: 15px;
+    font-size: 14px;
+    float: left;
+    clear: left;
   }
+
   footer li {
+    padding: 0px 15px 0px 0px;
     list-style-type: none;
     display: inline;
-    margin-left: -17px;
   }
 
   footer li a {
+    padding: 0px;
     text-decoration: none;
     color: rgba(0,0,0,0.6);
-    margin-right: 35px;
+    margin-right: 10px;
   }
 
   footer li a:hover {
@@ -308,14 +423,20 @@ margin-left: 71.5%;
   }
 
   footer #ul {
+    height: 15px;
     float: right;
-    margin-top: -55px;
+    clear: right;
   }
 
   footer #ul li {
+    padding: 0px 15px 0px 0px;
     margin-left: 2px;
-
   }
+
+
+
+
+  /* __________ Media Queries ___________________________*/
 
 
 @media only screen and  (max-width: 768px) {
@@ -365,7 +486,7 @@ margin-left: 71.5%;
     margin-bottom: 15px;
   }
 
-  .button2 { 
+  .button2 {
     margin-top: -10px;
 
    }
@@ -443,10 +564,3 @@ margin-left: 71.5%;
 
 
 }
-
-
-
-
-
-
-
